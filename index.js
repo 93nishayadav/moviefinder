@@ -26,7 +26,7 @@ $(".submit").click(function(){
     }
     else 
     {
-      dynurl=`http://www.omdbapi.com/?i=${imdbId}&apikey=ec176b5b` //set url according control values and call function
+      dynurl=`https://www.omdbapi.com/?i=${imdbId}&apikey=ec176b5b` //set url according control values and call function
       getdata(dynurl)
     } 
   }
@@ -48,10 +48,10 @@ $(".submit").click(function(){
     else 
     {//set url according control values and call function
       if (imdbyear=="" || imdbyear==undefined){
-        dynurl=`http://www.omdbapi.com/?s=${imdbtitle}&apikey=ec176b5b`     
+        dynurl=`https://www.omdbapi.com/?s=${imdbtitle}&apikey=ec176b5b`     
       }
       else{
-        dynurl=`http://www.omdbapi.com/?t=${imdbtitle}&y=${imdbyear}&apikey=ec176b5b`
+        dynurl=`https://www.omdbapi.com/?t=${imdbtitle}&y=${imdbyear}&apikey=ec176b5b`
       }
       getdata(dynurl)
     }
