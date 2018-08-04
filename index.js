@@ -64,11 +64,12 @@ function getdata(dynurl)
 
     $.ajax({
         type: 'GET', // request type GET, POST, PUT
+        async:true,
         dataType: 'json', // requesting datatype
         url: dynurl, // URL of getting data       
         success: (data) => { // in case of success response
           console.log(data)
-           let tempRow1;
+           let tempRow1="";
            if (data.Response.toLowerCase()=="true"){ //check  value of response whether its true or false
               if (data.hasOwnProperty("Search")){    //check if there are multiple results or not by checking search object
                 for(allPeople of data.Search){
