@@ -58,7 +58,7 @@ $(".submit").click(function(){
   }
 });
 
-function getdata(dynurl)
+let getdata=(dynurl)=>
 {
   console.log("making request")
 
@@ -121,7 +121,7 @@ function getdata(dynurl)
     }); // end of AJAX request
 }
 
-function CreateCard (allPeople,tempRow1){
+let CreateCard=(allPeople,tempRow1)=>{
   
    let poster=allPeople.Poster
                 if (poster=="N/A"){
